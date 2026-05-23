@@ -1,0 +1,10 @@
+{
+    "environment": "Blocks",
+    "total_steps": 1000,
+    "collisions": 155,
+    "collision_rate": 0.155,
+    "total_distance": 59.31158711559313,
+    "steering_variance": 0.005607886169525654,
+    "attention_consistency": 1.0,
+    "avg_fps": 6.506532948496986
+}

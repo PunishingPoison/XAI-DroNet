@@ -1,0 +1,4 @@
+-r requirements.txt
+msgpack-rpc-python
+backports.ssl_match_hostname
+airsim

@@ -1,0 +1,11 @@
+torch
+torchvision
+opencv-python
+numpy
+matplotlib
+pillow
+pyyaml
+pytest
+h5py
+streamlit
+pandas

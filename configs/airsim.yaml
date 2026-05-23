@@ -1,0 +1,13 @@
+airsim:
+  camera_name: "0"
+  vehicle_name: ""
+  output_frame: "outputs/airsim/latest_frame.png"
+  output_prediction: "outputs/airsim/latest_prediction.json"
+  output_jsonl: "outputs/airsim/live_predictions.jsonl"
+  output_navigation_jsonl: "outputs/airsim/autonomous_navigation.jsonl"
+  frame_output_dir: "outputs/airsim/frames"
+  checkpoint: "checkpoints/dronet_official.pt"
+  command_duration: 0.1
+  max_forward_velocity: 1.0
+  velocity_smoothing: 0.7
+  yaw_smoothing: 0.5

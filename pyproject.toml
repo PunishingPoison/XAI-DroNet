@@ -1,0 +1,10 @@
+[project]
+name = "xai-dronet"
+version = "0.1.0"
+description = "Paper-faithful DroNet reproduction with XAI extensions for simulated drone navigation."
+requires-python = ">=3.10,<3.13"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
