@@ -41,9 +41,11 @@ Unlike standard black-box AI models, this project integrates Grad-CAM (Gradient-
 
 <img width="1918" height="1018" alt="SS4" src="https://github.com/user-attachments/assets/84f900f0-1a24-4c54-8a58-c2ada42f6cb1" />
 
+
 - **Grad-CAM**: An explainability technique that uses the gradients of the target concept (e.g., collision probability) flowing into the final convolutional layer to produce a coarse localization map highlighting the important regions in the image.
 
 <img width="1702" height="830" alt="SS9" src="https://github.com/user-attachments/assets/98d1ad58-e5c8-41ed-8488-107cc373dd45" />
+
 
 - **Continuous Control**: A low-pass filtered controller that maps the neural network's predictions to smooth physical velocity and yaw commands for the drone. If a collision is imminent (high collision probability), the forward velocity drops, and an emergency panic-turn reflex is triggered to avoid the obstacle.
 
