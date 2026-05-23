@@ -1,5 +1,8 @@
 # XAI-DroNet: Explainable Autonomous Drone Navigation
 
+<img width="1918" height="1021" alt="SS1" src="https://github.com/user-attachments/assets/1fc91504-85c7-43d1-9320-fdc41419ffdb" />
+
+
 This repository contains a research-oriented implementation of an Explainable Autonomous Drone Navigation system. It is based on the principles of the DroNet paper ("Learning to Fly by Driving"), enhanced with Explainable AI (XAI) capabilities through Grad-CAM, and integrated with Unreal Engine 5 via the Colosseum (AirSim) simulator.
 
 This project provides a robust pipeline for simulating, evaluating, and visualizing deep neural network decisions for autonomous drone flight in unseen, simulated environments.
@@ -35,8 +38,17 @@ Unlike standard black-box AI models, this project integrates Grad-CAM (Gradient-
 ## Key Concepts
 
 - **DroNet Architecture**: A residual convolutional neural network (CNN) that processes images to simultaneously predict a continuous steering angle (regression) and a binary collision probability (classification).
+
+<img width="1918" height="1018" alt="SS4" src="https://github.com/user-attachments/assets/84f900f0-1a24-4c54-8a58-c2ada42f6cb1" />
+
 - **Grad-CAM**: An explainability technique that uses the gradients of the target concept (e.g., collision probability) flowing into the final convolutional layer to produce a coarse localization map highlighting the important regions in the image.
+
+<img width="1918" height="1018" alt="SS2" src="https://github.com/user-attachments/assets/708e8a28-99c3-46d2-a1f9-cd263c6effd4" />
+
 - **Continuous Control**: A low-pass filtered controller that maps the neural network's predictions to smooth physical velocity and yaw commands for the drone. If a collision is imminent (high collision probability), the forward velocity drops, and an emergency panic-turn reflex is triggered to avoid the obstacle.
+
+<img width="1482" height="761" alt="SS3" src="https://github.com/user-attachments/assets/4cfc441a-c767-4cc0-9d62-bd991ba602f6" />
+
 
 ---
 
